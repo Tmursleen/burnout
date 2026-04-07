@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play burnout.</tw-noscript></noscript></tw-story>
-<tw-storydata name="burnout" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="A198BD85-B8A9-46F5-9DF2-738D5197D1CE" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+<tw-storydata name="burnout" startnode="24" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="A198BD85-B8A9-46F5-9DF2-738D5197D1CE" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
 
 /* ── Reset ── */
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1929,9 +1929,8 @@ $(document).on(':passagerender', function() {
       &lt;div class=&quot;choice-set&quot;&gt;
 
         &lt;div id=&quot;choice-help&quot; class=&quot;ch-red&quot;&gt;
-          (link:&quot;Help — Lift the cart. Get him free. Whatever it costs. (−20 EP)&quot;)[(goto:&quot;Day5_Road_Help&quot;)]
+          (link:&quot;Help — Lift the cart. Get him free. Whatever it costs. (−25 EP)&quot;)[(goto:&quot;Day5_Road_Help&quot;)]
         &lt;/div&gt;
-        &lt;!-- No EP cost → dock EP stays 40 → choice-solo available there. --&gt;
         &lt;div class=&quot;ch-green&quot;&gt;
           (link:&quot;Go — He told you to. The boat will not wait. (no EP change)&quot;)[(goto:&quot;Day5_Camp&quot;)]
         &lt;/div&gt;
@@ -1944,7 +1943,7 @@ $(document).on(':passagerender', function() {
     window.GameState.render();
     window.GameState.checkEPChoices();
   }, 100);
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="Day5_Road_Help" tags="" position="675,1175" size="100,100">&lt;script&gt;window.GameState.changeEP(-20);&lt;/script&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="Day5_Road_Help" tags="" position="675,1175" size="100,100">&lt;script&gt;window.GameState.changeEP(-25);&lt;/script&gt;
 &lt;audio id=&quot;bg-audio&quot; src=&quot;eruption.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
 &lt;script&gt;document.getElementById(&#39;bg-audio&#39;).volume = 0.5;&lt;/script&gt;
 
@@ -1978,7 +1977,7 @@ $(document).on(':passagerender', function() {
       &lt;p&gt;They do not look back. There is no time for that.&lt;/p&gt;
       &lt;p&gt;You stand. Your hands are shaking. The harbor is still three minutes away and Vesuvius has stopped making noise, which is worse than when it was loud.&lt;/p&gt;
 
-      &lt;div class=&quot;ep-badge loss&quot;&gt;−20 EP — You gave what you had left. Whether it was yours to give is another question.&lt;/div&gt;
+      &lt;div class=&quot;ep-badge loss&quot;&gt;−25 EP — You gave what you had left. Whether it was yours to give is another question.&lt;/div&gt;
       &lt;div class=&quot;warn&quot;&gt;You are running on almost nothing. The boat is close. So is everything else.&lt;/div&gt;
 
       &lt;div class=&quot;continue-link&quot;&gt;
