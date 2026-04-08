@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play burnout.</tw-noscript></noscript></tw-story>
-<tw-storydata name="burnout" startnode="24" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="A198BD85-B8A9-46F5-9DF2-738D5197D1CE" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+<tw-storydata name="burnout" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="A198BD85-B8A9-46F5-9DF2-738D5197D1CE" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
 
 /* ── Reset ── */
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1529,7 +1529,8 @@ $(document).on(':passagerender', function() {
       &lt;div class=&quot;continue-link&quot;&gt;(link:&quot;See Other Outcomes&quot;)[(goto:&quot;Day5_Morning&quot;)]&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Outcome_C" tags="" position="775,1350" size="100,100">&lt;audio id=&quot;bg-audio&quot; src=&quot;eruption.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Outcome_C" tags="" position="775,1350" size="100,100">&lt;script&gt;window.GameState.changeEP(+10);&lt;/script&gt;
+&lt;audio id=&quot;bg-audio&quot; src=&quot;eruption.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
 &lt;script&gt;document.getElementById(&#39;bg-audio&#39;).volume = 0.5;&lt;/script&gt;
 
 &lt;div class=&quot;hud&quot;&gt;
@@ -1863,11 +1864,11 @@ $(document).on(':passagerender', function() {
       &lt;div class=&quot;choice-set&quot;&gt;
         &lt;!-- choice-solo: requires 30 EP. Locked at 20 EP (helped old man path). --&gt;
         &lt;div id=&quot;choice-solo&quot; class=&quot;ch-green&quot;&gt;
-          (link:&quot;You have enough energy to do this on your own.&quot;)[(goto:&quot;Outcome_D&quot;)]
+          (link:&quot;You have enough energy to do this on your own. (No change to EP)&quot;)[(goto:&quot;Outcome_D&quot;)]
         &lt;/div&gt;
         &lt;!-- Always available — no EP cost. --&gt;
         &lt;div class=&quot;ch-orange&quot;&gt;
-          (link:&quot;You cannot do this alone. You call out for help.&quot;)[(goto:&quot;Outcome_C&quot;)]
+          (link:&quot;You cannot do this alone. You call out for help. (+10)&quot;)[(goto:&quot;Outcome_C&quot;)]
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
